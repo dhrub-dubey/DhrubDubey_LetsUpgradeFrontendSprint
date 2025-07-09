@@ -71,10 +71,10 @@ export const cakes: Product[] = [
   },
   {
     id: 3,
-    name: "Chocolate Truffle Cake",
+    name: "Chocolate Cake",
     description: "Rich chocolate cake with dark chocolate ganache and chocolate shavings",
     price: "Rs. 1500.00",
-    image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+    image: `${import.meta.env.BASE_URL}assets/purechocolatecake.png`,
     category: "Classic",
     isVeg: false,
     quantity: "2-layer cake (serves 8-10)",
@@ -108,7 +108,7 @@ export const cakes: Product[] = [
     name: "Red Velvet Delight",
     description: "Classic red velvet cake with cream cheese frosting",
     price: "Rs. 1300.00",
-    image: "https://images.unsplash.com/photo-1586788680399-2c847f7d8b42?auto=format&fit=crop&w=800&q=80",
+    image: `${import.meta.env.BASE_URL}assets/redvelvetcake.png`,
     category: "Classic",
     isVeg: false,
     quantity: "2-layer cake (serves 10-12)",
@@ -340,6 +340,370 @@ export const cakes: Product[] = [
     },
     storageInstructions: "Store in the refrigerator",
     shelfLife: "Best consumed within 4 days"
+  },
+  {
+    id: 11,
+    name: "Chocolate Almond Cake",
+    description: "Rich chocolate cake made with almond flour and dark chocolate",
+    price: "Rs. 700.00",
+    image: `${import.meta.env.BASE_URL}assets/chocoalmondcake.png`,
+    category: "Classic",
+    isVeg: false,
+    quantity: "2-layer cake (serves 10-12)",
+    ingredients: [
+      "Gluten-free flour blend",
+      "Dark chocolate",
+      "Almond milk",
+      "Coconut oil",
+      "Eggs",
+      "Cocoa powder",
+      "Xanthan gum"
+    ],
+    allergens: ["Eggs", "Nuts"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 320,
+      protein: 6,
+      carbohydrates: 38,
+      fat: 16
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 4 days"
+  },
+  {
+    id: 12,
+    name: "Rosy Glitter Cake",
+    description: "Elegant chocolate cake with rosy glitter and floral decorations",
+    price: "Rs. 1500.00",
+    image: `${import.meta.env.BASE_URL}assets/Rosyglittercake.png`,
+    category: "Modern",
+    isVeg: false,
+    quantity: "2-layer cake (serves 8-10)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 13,
+    name: "Frozen Themed Cake",
+    description: "Magical frozen-themed cake with snowflakes and Elsa figurines",
+    price: "Rs. 1800.00",
+    image: `${import.meta.env.BASE_URL}assets/frozenthemedcake.png`,
+    category: "Kids",
+    isVeg: true,
+    quantity: "2-layer cake (serves 12-15)",
+    ingredients: [
+      "Vanilla cake mix",
+      "Food coloring",
+      "Buttercream",
+      "Chocolate ganache",
+      "Sprinkles"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 380,
+      protein: 5,
+      carbohydrates: 52,
+      fat: 18
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 4 days"
+  },
+  {
+    id: 14,
+    name: "Kit Kat Kisses Cake",
+    description: "Colorful cake with layers of Kit Kat bars and vanilla ganache",
+    price: "Rs. 2000.00",
+    image: `${import.meta.env.BASE_URL}assets/kitkatkissescake.png`,
+    category: "Wedding",
+    isVeg: true,
+    quantity: "3-layer cake (serves 15-20)",
+    ingredients: [
+      "Vanilla cake mix",
+      "Food coloring",
+      "Buttercream",
+      "Edible glitter",
+      "Sprinkles"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 390,
+      protein: 5,
+      carbohydrates: 52,
+      fat: 19
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 4 days"
+  },
+  {
+    id: 15,
+    name: "Mango Cake",
+    description: "Delicious mango-flavored cake with fresh mango slices and whipped cream",
+    price: "Rs. 1500.00",
+    image: `${import.meta.env.BASE_URL}assets/mangocake.png`,
+    category: "Classic",
+    isVeg: false,
+    quantity: "2-layer cake (serves 8-10)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 16,
+    name: "Black Forest Jar Cake",
+    description: "Classic black forest cake in a jar with layers of chocolate cake, cherries, and whipped cream",
+    price: "Rs. 1500.00",
+    image: `${import.meta.env.BASE_URL}assets/blackforestjarcake.png`,
+    category: "Specialty",
+    isVeg: false,
+    quantity: "2-layer cake (serves 8-10)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 17,
+    name: "Rosette Heart Chocolate Cake",
+    description: "Elegant chocolate cake with rosette decorations and a heart shape",
+    price: "Rs. 1800.00",
+    image: `${import.meta.env.BASE_URL}assets/rosetteheartchocolatecake.png`,
+    category: "Classic",
+    isVeg: false,
+    quantity: "2-layer cake (serves 10-12)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 18,
+    name: "Decorative Cup Cake",
+    description: "Decadent chocolate cup cake with rich ganache and chocolate shavings",
+    price: "Rs. 2000.00",
+    image: `${import.meta.env.BASE_URL}assets/decorativecupcake.png`,
+    category: "Modern",
+    isVeg: false,
+    quantity: "2-layer cake (serves 10-12)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 19,
+    name: "Original Flower Cake",
+    description: "Elegant cake with floral decorations",
+    price: "Rs. 2500.00",
+    image: `${import.meta.env.BASE_URL}assets/originalflowercake.png`,
+    category: "Classic",
+    isVeg: false,
+    quantity: "2-layer cake (serves 10-12)",
+    ingredients: [
+      "Dark chocolate",
+      "Heavy cream",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Flour"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1557979619-445218f326b9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "100g",
+      calories: 420,
+      protein: 6,
+      carbohydrates: 45,
+      fat: 25
+    },
+    storageInstructions: "Store in the refrigerator",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 20,
+    name: "Christmas Rich Fruit Plum Cake",
+    description: "Traditional rich fruit cake with a blend of dried fruits and nuts",
+    price: "Rs. 80.00",
+    image: `${import.meta.env.BASE_URL}assets/christmasrichfruitplumcake.png`,
+    category: "Brownies",
+    isVeg: true,
+    quantity: "1 piece (80g)",
+    ingredients: [
+      "Dark chocolate (70% cocoa)",
+      "Organic flour",
+      "Free-range eggs",
+      "European butter",
+      "Brown sugar",
+      "Pure vanilla extract",
+      "Sea salt"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1589375025852-a66cca98b1b0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1612201142855-7873bc1661b4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "80g",
+      calories: 320,
+      protein: 4,
+      carbohydrates: 38,
+      fat: 16
+    },
+    storageInstructions: "Store in an airtight container at room temperature",
+    shelfLife: "Best consumed within 5 days"
+  },
+  {
+    id: 21,
+    name: "Black Forest Cake",
+    description: "Classic black forest cake with layers of chocolate sponge, whipped cream, and cherries",
+    price: "Rs. 70.00",
+    image: `${import.meta.env.BASE_URL}assets/blackforestcake.png`,
+    category: "Birthday",
+    isVeg: true,
+    quantity: "1 piece (80g)",
+    ingredients: [
+      "Dark chocolate (70% cocoa)",
+      "Organic flour",
+      "Free-range eggs",
+      "European butter",
+      "Brown sugar",
+      "Pure vanilla extract",
+      "Sea salt"
+    ],
+    allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1589375025852-a66cca98b1b0?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1612201142855-7873bc1661b4?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "80g",
+      calories: 320,
+      protein: 4,
+      carbohydrates: 38,
+      fat: 16
+    },
+    storageInstructions: "Store in an airtight container at room temperature",
+    shelfLife: "Best consumed within 5 days"
   }
 ];
 
@@ -380,7 +744,7 @@ export const sweeties: Product[] = [
   },
   {
     id: 2,
-    name: "Mango Mousse",
+    name: "Chocolate Mango Mousse",
     description: "Delicious mango mousse with a light and airy texture",
     price: "Rs. 60.00",
     image: `${import.meta.env.BASE_URL}assets/mangomousse.png`,
@@ -428,6 +792,39 @@ export const sweeties: Product[] = [
       "Vanilla extract"
     ],
     allergens: ["Eggs", "Dairy", "Wheat", "Gluten"],
+    additionalImages: [
+      "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1612201142855-7873bc1661b4?auto=format&fit=crop&w=800&q=80"
+    ],
+    nutritionalInfo: {
+      servingSize: "50g",
+      calories: 250,
+      protein: 3,
+      carbohydrates: 32,
+      fat: 12
+    },
+    storageInstructions: "Store in an airtight container at room temperature",
+    shelfLife: "Best consumed within 7 days"
+  },
+{
+    id: 4,
+    name: "Red Velvet Choco Chip Cookies",
+    description: "Eggless red velvet cookies with chocolate chips",
+    price: "Rs. 40.00",
+    image: `${import.meta.env.BASE_URL}assets/redvelvetchocochipcookies.png`,
+    category: "Cookies",
+    isVeg: true,
+    quantity: "1 piece (50g)",
+    ingredients: [
+      "Premium chocolate chips",
+      "Butter",
+      "Brown sugar",
+      "Flour",
+      "Red velvet cake mix",
+      "Vanilla extract"
+    ],
+    allergens: ["Dairy", "Wheat", "Gluten"],
     additionalImages: [
       "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=800&q=80",
       "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80",
