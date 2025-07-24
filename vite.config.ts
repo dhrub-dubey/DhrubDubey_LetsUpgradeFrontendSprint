@@ -1,10 +1,12 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:  "cross-env VITE_APP_BASE_PATH=/DhrubDubey_LetsUpgradeFrontendSprint/ vite build && gh-pages -d dist",
+  base:  isGitHubPages ? '/DhrubDubey_LetsUpgradeFrontendSprint/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
