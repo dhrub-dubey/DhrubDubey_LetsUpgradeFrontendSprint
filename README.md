@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Aesthetic Cakes - Static Website
 
 A beautiful, responsive website for Aesthetic Cakes bakery, built with HTML, CSS, and JavaScript. Perfect for GitHub Pages hosting.
@@ -9,9 +9,10 @@ A beautiful, responsive website for Aesthetic Cakes bakery, built with HTML, CSS
 - **Interactive Cart**: Add/remove items with quantity management
 - **Product Search**: Real-time search functionality
 - **Product Details**: Detailed modals with nutritional information
-- **Contact Form**: EmailJS integration for contact submissions
+- **Contact Form**: EmailJS integration for contact submissions (not configured as of now with email js link)
 - **Smooth Animations**: Beautiful hover effects and transitions
 - **Modern UI**: Clean, aesthetic design with Tailwind CSS
+- **Live Checkout**: Just hit checkout from cart, fill in your details & place your order
 
 ## Sections
 
@@ -21,6 +22,8 @@ A beautiful, responsive website for Aesthetic Cakes bakery, built with HTML, CSS
 4. **Portfolio**: Complete cake collection with filtering
 5. **Sweeties**: Brownies, cookies, and other treats
 6. **Contact**: Contact information and form
+7. **Cart**: Add products to your cart before checking out
+8. **Checkout Section**: Hit Checkout & fill in your details to place the order
 
 ## Technologies Used
 
@@ -30,14 +33,12 @@ A beautiful, responsive website for Aesthetic Cakes bakery, built with HTML, CSS
 - Lucide Icons
 - EmailJS for contact form
 - Google Fonts (Playfair Display & Inter)
+- Figma (For designing the website)
 
 ## Setup for GitHub Pages
 
-1. **Fork or Download** this repository
-2. **Upload your assets**:
-   - Replace `assets/aesthetic-cakes-logo.png` with your logo
-   - Replace `assets/mangomousse.png` with your mango mousse image
-3. **Configure EmailJS** (optional):
+1. **Fork or Download** this repository     
+2. **Configure EmailJS** (optional):
    - Sign up at [EmailJS](https://www.emailjs.com/)
    - Replace the placeholder keys in `script.js`:
      ```javascript
@@ -45,12 +46,18 @@ A beautiful, responsive website for Aesthetic Cakes bakery, built with HTML, CSS
      // And in the sendForm function:
      await emailjs.sendForm('your_service_id', 'your_template_id', contactForm);
      ```
-4. **Enable GitHub Pages**:
+3. **Enable GitHub Pages**:
    - Go to your repository settings
    - Scroll down to "Pages" section
    - Select "Deploy from a branch"
    - Choose "main" branch and "/ (root)" folder
    - Save and wait for deployment
+
+## To run locally
+
+1. **Access Repo**: Download this repository
+2. **Install dependencies**: npm install
+3. **Run locally**: npm run dev
 
 ## Customization
 
