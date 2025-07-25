@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { CartItem } from '../components/CartModal';
 import { Product } from '../types/product';
